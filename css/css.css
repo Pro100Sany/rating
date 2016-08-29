@@ -1,0 +1,457 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27.10.2015, 17:52:36
+    Author     : Alexander
+*/
+@font-face {
+    font-family: 'Gagalin';
+    src: local('Gagalin'), local('Gagalin-Regular'), url('fonts/Gagalin.woff2') format('woff2'), url('fonts/Gagalin.woff') format('woff'), url('fonts/Gagalin.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Anglecia Pro Dsp';
+    src: local('Anglecia Pro Display Italic'), local('AngleciaProDisplay-Italic'), url('fonts/Angleciaprodisplayitalic.woff2') format('woff2'), url('fonts/Angleciaprodisplayitalic.woff') format('woff'), url('fonts/Angleciaprodisplayitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Anglecia Pro Dsp';
+    src: local('Anglecia Pro Display Regular'), local('AngleciaProDisplay-Regular'), url('fonts/Angleciaprodisplayregular.woff2') format('woff2'), url('fonts/Angleciaprodisplayregular.woff') format('woff'), url('fonts/Angleciaprodisplayregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barkentina';
+    src: local('Barkentina 1'), url('barkentina1.woff2') format('woff2'), url('fonts/barkentina1.woff') format('woff'), url('fonts/barkentina1.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo Cyrl';
+    src: local('Museo Cyrl 500'), local('MuseoCyrl-500'), url('fonts/Museocyrl500.woff2') format('woff2'), url('fonts/Museocyrl500.woff') format('woff'), url('fonts/Museocyrl500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.inp  {
+    width: 25px;
+}
+/*tr, td {
+    background-color:#fff;
+}*/
+
+.klass {
+    width: 100px;
+    height: 40px;
+    border-color: #00cc00;
+    border: 4px;
+    border-style: inset;
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    color: #ffcc00;
+    margin-left: 12%;
+    
+}
+.radio {
+    display: inline-block;
+}
+.select {
+    width: 100px;
+    text-align: center;
+}
+
+hr {
+    size: 50px;
+}
+
+.rait_name {
+    color: darkblue;
+    
+}
+#block_polo{
+    border-style: double;
+    border-color: grey;
+    border-radius: 15px;
+    margin:15px;
+}
+#pr {
+    text-align: right;
+    color: #c0c0c0;
+}
+
+
+.student_list:active {
+    background-color: #28a4c9;
+    margin-right: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+
+ /*/////////////////////////////кнопка наверх///////////////////////*/ 
+ 
+#scrollup {
+position: fixed; /* фиксированная позиция */
+opacity: 0.8; /* прозрачность */
+padding: 15px 10px 10px; /* отступы */
+background: #aaa;
+border-radius: 5px; /* скругление углов */
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+bottom: 10px; /* отступ снизу */
+display: none; /* спрятать блок */
+cursor: pointer;
+float: right;
+right: 30px;
+}
+
+/*/////////////////////////////Таблица результаты////////////////////////////////////*/
+
+.zagolovok {
+    background: white !important;
+    color: black !important;
+    text-align:center;
+    font-size: 20px !important; 
+    width: 50%;
+    
+}
+
+.table_col {  
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  min-width: 860px;
+  min-height: 350px;
+  background: white;
+  text-align: left;
+  border-collapse: collapse;
+  color: #3E4347;
+}
+
+.table_col th:nth-child(1), .table_col td:nth-child(1) {
+color: #F5F6F6;
+border-left: none;
+background: #8fc9f6;     
+font-size: 18px; 
+}
+.table_col th:nth-child(4), .table_col td:nth-child(4) {
+color: #F5F6F6;
+border-left: none;
+background: #8fc9f6;     
+font-size: 18px; 
+}
+
+
+.table_col th:nth-child(2), .table_col td:nth-child(2) {
+color: #F5F6F6;
+border-left: none;
+background: #f9a2e1;     
+font-size: 18px 
+}
+.table_col th:nth-child(5), .table_col td:nth-child(5) {
+color: #F5F6F6;
+border-left: none;
+background: #f9a2e1;     
+font-size: 18px 
+}   
+
+
+
+.table_col th:nth-child(3), .table_col td:nth-child(3) {
+color: #F5F6F6;
+border-left: none;
+background: #d6a9f9;      
+font-size: 18px;
+}
+.table_col th:nth-child(6), .table_col td:nth-child(6) {
+color: #F5F6F6;
+border-left: none;
+background: #d6a9f9;     
+font-size: 18px 
+}
+
+
+ 
+    
+    
+    
+    
+    
+
+.table_col th {
+font-weight: normal;
+border-bottom: 2px solid #F5E1A6;
+border-right: 20px solid white;
+border-left: 20px solid white;
+padding: 8px 10px;
+}
+.table_col td {
+border-right: 20px solid white;
+border-left: 20px solid white;
+padding: 12px 10px;
+color: #8b8e91;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+
+.background {
+    background-image:url(../images/background-wallpapers-32.jpg);
+    height: 100%;
+}
+
+
+#pas_tab {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    
+}
+
+#pas_tab tr td {
+    background: #333;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    color:whitesmoke;
+}
+#pas_tab tr td.pas_td {
+    width: 380px;
+    border-left-width: 2px;
+    border-left-color: bisque;
+    border-left-style: double;
+}
+#pas_tab tr td.pas_td_new {
+    width: 380px;
+    height: 60px;
+    text-align: left;
+    padding: 5px 0 0 5px ;
+    vertical-align: text-top;
+    border-left-width: 2px;
+    border-left-color: bisque;
+    border-left-style: double;
+    font-size: 16px;
+}
+
+.echo_new_pass {
+    width: 200px;
+    margin: auto;
+    margin: 10px 0 10px 0;
+    border-color: bisque;
+    border-style:double;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+input.number  {
+    color:dimgrey;
+    background-color:beige;
+}
+
+.pas_td_2 {
+    width: 380px;
+    height: 60px;
+    text-align: left;
+    padding: 5px 0 0 5px ;
+    vertical-align: text-top;
+    border-left-width: 2px;
+    border-left-color: bisque;
+    border-left-style: double;
+    font-size: 16px; 
+}
+/*//////////////////////////страница "Редактор списков"///////////////////////////////////*/
+
+#spisok_student {
+    width: 200px;
+     
+}
+.student_editor {
+    width: 450px;
+    height: 700px;
+    background-color:dimgray;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: bisque;
+}
+
+.student_editor_name {
+    border-width: medium;
+    border-style:double;
+    border-radius: 5px;
+    border-color: bisque;
+    color: floralwhite;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.student_editor_klass {
+     border-width: medium;
+    border-style:double;
+    border-radius: 5px;
+    border-color: bisque;
+    color: floralwhite;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.student_editor_update {
+    color:burlywood;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    font-size: 17px;
+    display: block;
+    background: dimgray;
+    
+}
+
+.student_editor_remove {
+    color:burlywood;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    font-size: 17px;
+    display: block;
+    
+}
+
+.student_editor_delete {
+    color:burlywood;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    font-size: 17px;
+    display: block;
+    
+}
+
+.btn_student_top {
+    display: inline-block;
+    margin: auto;
+}
+
+
+.block-text {
+    display:none;
+    border-color: antiquewhite;
+    border-style:dashed;
+    border-width: 2px;
+    border-radius: 4px;
+    transition: 3s;
+    width:19em;
+    margin: auto;
+    margin-top:10px;
+}
+@media (min-width:1200px){
+    
+    .block-text {    
+    margin-left: -12em;
+    margin-top:10px;
+    }
+}
+
+
+.block-img:hover .block-text {
+    display:block;
+    transition: 3s;
+}
+
+ 
+.parag {
+    color:dodgerblue;
+    text-decoration-skip: spaces;
+}
+
+
+
+
+
+#sb-site {
+    min-height: 1px !important;
+    max-height: 1px !important;
+}
+
+/*///////////////////////////////////////*/
+
+@media (min-width: 1200px){
+    #aside1 {
+        max-width: 320px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    #aside1 {
+        max-width: 220px;
+    }
+}
+/*//////////ПРОИЗВОЛЬНЫЕ////////*/
+@media (min-width: 1201px) and (max-width: 1605px){
+    #aside1 {
+        max-width: 210px;
+    }
+}
+@media (max-width: 1508px){
+    #emblema {
+        display: none;
+    }
+}
+.futer {
+        text-align: right;
+}
+@media (max-width: 1200px){
+    .futer {
+        text-align: center;
+    }
+}
+
+/*////////////////////////////////*/
+.content {
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    
+}
+/*//////////////TiP//////////////////*/
+.select_tip {
+    text-align: center; 
+    text-decoration: none;
+   
+    height: 60px;
+    
+    border-style: groove; 
+    border-radius: 7px; 
+    border-color:#8f9591;
+    
+    background: #86f3ff;
+    box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, 0.1);
+    
+    transition: 2s;
+    
+}
+.select_tip:hover {
+     transform: scale(1.6) ;
+     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1)!important;
+     background: #ffef86;
+     text-decoration:#00cc00;
+}
+.opisanie_tipov {
+    border-color:#1ac5f8;
+    border-style: double;
+    
+    color:#f6a91e;
+    font-family: Museo Cyrl; 
+    font-size: 20px;
+    text-align: center;
+}

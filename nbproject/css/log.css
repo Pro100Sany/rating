@@ -1,0 +1,48 @@
+
+a {
+    color: #000;
+}
+a:hover, a:visited, a:active {
+    text-decoration: none;
+}
+form {
+    display: inline-block;
+}
+
+#main {
+    width: 780px;
+    margin:0px auto 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #ececec;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+}
+form fieldset {
+    border: none;
+}
+form fieldset br {
+    clear: left;
+}
+label {
+    margin-top: 5px;
+    display: block;
+    width: 80px;
+    padding: 0;
+    float: left;
+}
+input {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+    background: #fff;
+}
+input:hover {
+    border: 1px solid #222;
+    background: #eee;
+}

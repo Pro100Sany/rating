@@ -1,0 +1,75 @@
+
+a {
+    color: #000;
+}
+a:hover, a:visited, a:active {
+    text-decoration: none;
+}
+form {
+    display: inline-block;
+}
+
+
+#main{
+    margin-top: 110px; 
+   
+
+   
+    background-color: #0A9A63;
+    padding-top: 10px;
+    border-radius: 10px;
+
+    box-shadow:
+       0 1px 10px rgba(0, 0, 0, .3),
+       -23px 0 50px -23px rgba(0, 0, 0, .8),
+       23px 0 50px -23px rgba(0, 0, 0, .8),
+       0 0 40px rgba(0, 0, 0, .1) inset;
+}
+@media (max-width:1650px) {
+    #main{
+        margin-top: 50px; 
+    }
+}
+@media (max-width:1100px) {
+    #main{
+        margin-top: 30px; 
+    }
+}
+#in_main{
+    padding-top: 60px;
+}
+.vertb {
+   margit-top: 10px;
+   margin-bottom: 10px;    
+   transition: 1.2s !important;
+}
+.vert {
+   margit-top: 10px;
+   margin-bottom: 10px;    
+   transition: 1.2s !important;
+}
+.vert:focus { 
+     box-shadow: 0 0 13px 7px rgba(221, 221, 221, 1)!important;
+    
+}
+input {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+    background: #fff;
+}
+input:hover {
+    border: 1px solid #222;
+    background: #eee;
+}
+.autorization {
+    text-align: center;  
+    font-family:gagalin; 
+    font-size: 250%; 
+    color: #f8f8f8; 
+}
+@media (max-width:420px) {
+    #main{
+       font-size: 80%; 
+    }
+}

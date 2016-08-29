@@ -1,0 +1,83 @@
+/*/////////////////////////////Плитки///////////////////////*/ 
+.plitca {
+    min-height: 400px !important;
+    
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    
+}
+#poloz_down {
+    padding: 20px 0 0 50px; 
+}
+@media (max-width:800px){
+    .plitca {
+       width: 96%;
+        
+    }
+}
+/*.plitca-middle {
+    animation-fill-mode:  both;
+    
+    animation-name: plitca-middle;    
+    animation-duration: 2.2s;
+    animation-iteration-count: 1;
+    animation-delay: 1.5s;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+    }
+.plitca-left {
+    animation-fill-mode:  both;
+    
+    animation-name: plitca-left;    
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    }
+.plitca-right {
+    animation-fill-mode:  both;
+    
+    animation-name: plitca-right;    
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+.plitca-right-2 {
+     animation-fill-mode:  both;
+    
+    animation-name: plitca-right;    
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+}
+.plitca-left-2 {
+    animation-fill-mode:  both;
+    
+    animation-name: plitca-left;    
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+}
+@keyframes plitca-middle{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes plitca-left{
+    0%{
+        transform: translate(-1000px,0px);
+    }
+    100%{
+        transform: translate(0, 0px);
+    }
+}
+@keyframes plitca-right{
+    0%{
+        transform: translate(1000px,0px);
+    }
+    100%{
+        transform: translate(0, 0px);
+    }
+}*/

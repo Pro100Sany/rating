@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Anglecia Pro Dsp';
+    src: local('Anglecia Pro Display Italic'), local('AngleciaProDisplay-Italic'), url('Angleciaprodisplayitalic.woff2') format('woff2'), url('Angleciaprodisplayitalic.woff') format('woff'), url('Angleciaprodisplayitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Anglecia Pro Dsp';
+    src: local('Anglecia Pro Display Regular'), local('AngleciaProDisplay-Regular'), url('Angleciaprodisplayregular.woff2') format('woff2'), url('Angleciaprodisplayregular.woff') format('woff'), url('Angleciaprodisplayregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
